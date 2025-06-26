@@ -21,5 +21,6 @@ public class MailController {
     @GetMapping("/mime")
     public void sendMimeMessage(){
         mailService.sendMimeMessage();
+        System.out.println("success!");
     }
 }

@@ -26,7 +26,7 @@ public class MailService {
             //메일 제목 설정
             simpleMailMessage.setSubject("테스트 메일 제목");
             //메일 내용 설정
-            simpleMailMessage.setText("愛してる!!!!");
+            simpleMailMessage.setText("으아아아아아");
             javaMailSender.send(simpleMailMessage); // 💥 이게 빠졌음
             log.info("단순 메일 전송 완료");
         } catch(Exception e){
