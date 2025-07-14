@@ -21,10 +21,17 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'com.h2database:h2'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
 
 	compileOnly 'org.projectlombok:lombok:1.18.30' // Use the latest stable version
 	annotationProcessor 'org.projectlombok:lombok:1.18.30' // Use the latest stable version
+
+//	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
 }
 
 tasks.named('test') {

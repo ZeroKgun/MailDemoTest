@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>이메일 인증</title>
+</head>
+<body>
+<h2>이메일 인증번호 안내</h2>
+<p>안녕하세요,</p>
+<p>아래 인증번호를 입력해 주세요:</p>
+<h3 style="color:blue" th:text="${authCode}">123456</h3>
+<p>유효 시간: 5분</p>
+</body>
+</html>
