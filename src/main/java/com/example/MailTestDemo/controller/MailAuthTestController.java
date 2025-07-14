@@ -23,7 +23,7 @@ public class MailAuthTestController {
     @PostMapping("/")
     public ResponseEntity<String> sendCode(@RequestBody EmailRequestDto dto){
         emailAuthService.sendAuthCode(dto.getEmail());
-        return ResponseEntity.ok("인증번호 전송 완료!");
+        return ResponseEntity.ok("인증번호 전송 완료");
     }
 
     @PostMapping("/verify-code")
