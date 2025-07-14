@@ -1,7 +1,7 @@
 package com.example.MailTestDemo.controller;
 
 
-import com.example.MailTestDemo.service.MailService;
+import com.example.MailTestDemo.service.MailSendTestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class MailController {
 
-    private final MailService mailService;
+    private final MailSendTestService mailSendTestService;
 
     @GetMapping("/simple")
     public void sendSimpleMailMessage(){
-        mailService.sendSimpleMailMessage();
+        mailSendTestService.sendSimpleMailMessage();
         System.out.println("success!");
     }
 
     @GetMapping("/mime")
     public void sendMimeMessage(){
-        mailService.sendMimeMessage();
+        mailSendTestService.sendMimeMessage();
         System.out.println("success!");
     }
 }
